@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block label %}Enter credentials:{% endblock %}
+
+
+
+{% block form %} {{ form.as_p }} {% endblock %}
+
+{% block para %}<p> Don't have an account? <a href="{% url 'register' %}">Register</a></p>{% endblock %}
